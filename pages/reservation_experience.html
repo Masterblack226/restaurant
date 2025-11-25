@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserve Your Table - Culinary Canvas</title>
+    <meta name="description" content="Book your exceptional dining experience at Culinary Canvas. Choose from chef's table, wine pairings, and special occasion packages with real-time availability." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Flocalrest3952back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-secondary-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                            <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                        </svg>
+                        <span class="font-playfair text-xl font-bold text-primary">Culinary Canvas</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="interactive_menu_experience.html" class="text-text-primary hover:text-primary transition-quick font-inter font-medium">Menu</a>
+                        <a href="reservation_experience.html" class="text-primary font-inter font-semibold">Reservations</a>
+                        <a href="private_events_experiences.html" class="text-text-primary hover:text-primary transition-quick font-inter font-medium">Private Events</a>
+                        <a href="our_story_philosophy.html" class="text-text-primary hover:text-primary transition-quick font-inter font-medium">Our Story</a>
+                        <a href="contact_visit_information.html" class="text-text-primary hover:text-primary transition-quick font-inter font-medium">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-primary hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-secondary-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="interactive_menu_experience.html" class="block px-3 py-2 text-text-primary hover:text-primary transition-quick font-inter font-medium">Menu</a>
+                <a href="reservation_experience.html" class="block px-3 py-2 text-primary font-inter font-semibold">Reservations</a>
+                <a href="private_events_experiences.html" class="block px-3 py-2 text-text-primary hover:text-primary transition-quick font-inter font-medium">Private Events</a>
+                <a href="our_story_philosophy.html" class="block px-3 py-2 text-text-primary hover:text-primary transition-quick font-inter font-medium">Our Story</a>
+                <a href="contact_visit_information.html" class="block px-3 py-2 text-text-primary hover:text-primary transition-quick font-inter font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-12 bg-primary text-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Elegant restaurant dining room" class="w-full h-full object-cover opacity-30" loading="lazy" onerror="this.src='https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16">
+            <h1 class="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+                Reserve Your Experience
+            </h1>
+            <p class="font-inter text-lg sm:text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Begin your culinary journey with us. Choose your preferred dining experience and let us create an unforgettable evening tailored to your occasion.
+            </p>
+            <div class="flex items-center justify-center space-x-4 text-accent">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span class="font-inter font-medium">Real-time availability • Instant confirmation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Booking Widget -->
+    <section class="py-8 bg-surface border-b border-secondary-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-warm-lg p-6">
+                <div class="text-center mb-6">
+                    <h2 class="font-playfair text-2xl font-bold text-primary mb-2">Quick Reservation</h2>
+                    <p class="font-inter text-text-secondary">Select your preferences to check availability</p>
+                </div>
+                
+                <form class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+                    <div>
+                        <label class="block font-inter font-medium text-text-primary mb-2">Date</label>
+                        <input type="date" id="reservation-date" class="input-field" value="2025-08-30" min="2025-08-29" />
+                    </div>
+                    <div>
+                        <label class="block font-inter font-medium text-text-primary mb-2">Time</label>
+                        <select class="input-field">
+                            <option value>Select Time</option>
+                            <option value="5:30 PM">5:30 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="6:30 PM">6:30 PM</option>
+                            <option value="7:00 PM">7:00 PM</option>
+                            <option value="7:30 PM">7:30 PM</option>
+                            <option value="8:00 PM">8:00 PM</option>
+                            <option value="8:30 PM">8:30 PM</option>
+                            <option value="9:00 PM">9:00 PM</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-inter font-medium text-text-primary mb-2">Party Size</label>
+                        <select class="input-field">
+                            <option value>Guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7">7 Guests</option>
+                            <option value="8">8+ Guests</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-inter font-medium text-text-primary mb-2">Experience</label>
+                        <select class="input-field">
+                            <option value="standard">Standard Dining</option>
+                            <option value="chefs-table">Chef's Table</option>
+                            <option value="wine-pairing">Wine Pairing</option>
+                            <option value="tasting-menu">Tasting Menu</option>
+                            <option value="private-dining">Private Dining</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button type="button" class="btn-accent w-full h-12 text-lg font-semibold">
+                            Check Availability
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Experiences -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-primary mb-4">Choose Your Experience</h2>
+                <p class="font-inter text-lg text-text-secondary max-w-2xl mx-auto">
+                    Each dining experience is carefully crafted to create lasting memories. Select the perfect setting for your occasion.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Standard Dining -->
+                <div class="card group cursor-pointer" onclick="selectExperience('standard')">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2" alt="Main dining room atmosphere" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-accent text-primary px-3 py-1 rounded-full font-inter font-semibold text-sm">
+                            Most Popular
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-2">Standard Dining</h3>
+                    <p class="font-inter text-text-secondary mb-4">
+                        Experience our full à la carte menu in our beautifully appointed main dining room with attentive service and warm ambiance.
+                    </p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-inter text-sm text-text-secondary">Full menu access</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-inter text-sm text-text-secondary">2-hour dining window</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-inter text-sm text-text-secondary">Flexible seating options</span>
+                        </div>
+                    </div>
+                    <div class="text-primary font-inter font-semibold">No reservation fee</div>
+                </div>
+
+                <!-- Chef's Table -->
+                <div class="card group cursor-pointer" onclick="selectExperience('chefs-table')">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chef's table kitchen view" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full font-inter font-semibold text-sm">
+                            Exclusive
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-2">Chef's Table Experience</h3>
+                    <p class="font-inter text-text-secondary mb-4">
+                        Intimate counter seating with front-row views of our open kitchen, featuring personalized interaction with our culinary team.
+                    </p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-inter text-sm text-text-secondary">7-course tasting menu</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-inter text-sm text-text-secondary">Chef interaction included</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-inter text-sm text-text-secondary">Limited to 8 guests</span>
+                        </div>
+                    </div>
+                    <div class="text-primary font-inter font-semibold">$125 per person</div>
+                </div>
+
+                <!-- Wine Pairing -->
+                <div class="card group cursor-pointer" onclick="selectExperience('wine-pairing')">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.pixabay.com/photo/2016/03/02/20/13/sunset-1232594_1280.jpg" alt="Wine pairing dinner setup" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full font-inter font-semibold text-sm">
+                            Sommelier Curated
+                        </div>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-2">Wine Pairing Experience</h3>
+                    <p class="font-inter text-text-secondary mb-4">
+                        Expertly curated wine selections paired with our seasonal menu, guided by our certified sommelier team.
+                    </p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-inter text-sm text-text-secondary">5-course menu with wines</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-inter text-sm text-text-secondary">Sommelier presentation</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-inter text-sm text-text-secondary">Small-batch producers</span>
+                        </div>
+                    </div>
+                    <div class="text-primary font-inter font-semibold">$95 per person</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Reservation Form -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-warm-lg p-8">
+                <div class="text-center mb-8">
+                    <h2 class="font-playfair text-3xl font-bold text-primary mb-4">Complete Your Reservation</h2>
+                    <p class="font-inter text-text-secondary">
+                        Help us prepare for your visit by sharing your preferences and any special requirements.
+                    </p>
+                </div>
+
+                <form class="space-y-8">
+                    <!-- Guest Information -->
+                    <div class="space-y-6">
+                        <h3 class="font-playfair text-xl font-bold text-primary border-b border-secondary-200 pb-2">
+                            Guest Information
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block font-inter font-medium text-text-primary mb-2">First Name *</label>
+                                <input type="text" class="input-field" placeholder="Enter your first name" required />
+                            </div>
+                            <div>
+                                <label class="block font-inter font-medium text-text-primary mb-2">Last Name *</label>
+                                <input type="text" class="input-field" placeholder="Enter your last name" required />
+                            </div>
+                            <div>
+                                <label class="block font-inter font-medium text-text-primary mb-2">Email Address *</label>
+                                <input type="email" class="input-field" placeholder="your.email@example.com" required />
+                            </div>
+                            <div>
+                                <label class="block font-inter font-medium text-text-primary mb-2">Phone Number *</label>
+                                <input type="tel" class="input-field" placeholder="(555) 123-4567" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reservation Details -->
+                    <div class="space-y-6">
+                        <h3 class="font-playfair text-xl font-bold text-primary border-b border-secondary-200 pb-2">
+                            Reservation Details
+                        </h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div>
+                                <label class="block font-inter font-medium text-text-primary mb-2">Preferred Date *</label>
+                                <input type="date" class="input-field" value="2025-08-30" min="2025-08-29" required />
+                            </div>
+                            <div>
+                                <label class="block font-inter font-medium text-text-primary mb-2">Preferred Time *</label>
+                                <select class="input-field" required>
+                                    <option value>Select Time</option>
+                                    <option value="5:30 PM">5:30 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="6:30 PM">6:30 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="7:30 PM">7:30 PM</option>
+                                    <option value="8:00 PM">8:00 PM</option>
+                                    <option value="8:30 PM">8:30 PM</option>
+                                    <option value="9:00 PM">9:00 PM</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-inter font-medium text-text-primary mb-2">Party Size *</label>
+                                <select class="input-field" required>
+                                    <option value>Number of Guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8+ Guests</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block font-inter font-medium text-text-primary mb-2">Dining Experience</label>
+                            <select class="input-field">
+                                <option value="standard">Standard Dining</option>
+                                <option value="chefs-table">Chef's Table Experience (+$125/person)</option>
+                                <option value="wine-pairing">Wine Pairing Experience (+$95/person)</option>
+                                <option value="tasting-menu">Seasonal Tasting Menu (+$85/person)</option>
+                                <option value="private-dining">Private Dining Room</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Special Preferences -->
+                    <div class="space-y-6">
+                        <h3 class="font-playfair text-xl font-bold text-primary border-b border-secondary-200 pb-2">
+                            Special Preferences
+                        </h3>
+                        
+                        <div>
+                            <label class="block font-inter font-medium text-text-primary mb-2">Occasion</label>
+                            <select class="input-field">
+                                <option value>Select Occasion (Optional)</option>
+                                <option value="birthday">Birthday Celebration</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="date-night">Date Night</option>
+                                <option value="business">Business Dinner</option>
+                                <option value="celebration">Special Celebration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block font-inter font-medium text-text-primary mb-2">Dietary Restrictions & Allergies</label>
+                            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                <div class="space-y-2">
+                                    <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="rounded border-secondary-300 text-primary focus:ring-primary" />
+                                        <span class="font-inter text-text-secondary">Vegetarian</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="rounded border-secondary-300 text-primary focus:ring-primary" />
+                                        <span class="font-inter text-text-secondary">Vegan</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="rounded border-secondary-300 text-primary focus:ring-primary" />
+                                        <span class="font-inter text-text-secondary">Gluten-Free</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="rounded border-secondary-300 text-primary focus:ring-primary" />
+                                        <span class="font-inter text-text-secondary">Dairy-Free</span>
+                                    </label>
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="rounded border-secondary-300 text-primary focus:ring-primary" />
+                                        <span class="font-inter text-text-secondary">Nut Allergies</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="rounded border-secondary-300 text-primary focus:ring-primary" />
+                                        <span class="font-inter text-text-secondary">Shellfish Allergies</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="rounded border-secondary-300 text-primary focus:ring-primary" />
+                                        <span class="font-inter text-text-secondary">Pescatarian</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2">
+                                        <input type="checkbox" class="rounded border-secondary-300 text-primary focus:ring-primary" />
+                                        <span class="font-inter text-text-secondary">Other Allergies</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-inter font-medium text-text-primary mb-2">Seating Preference</label>
+                            <select class="input-field">
+                                <option value>No Preference</option>
+                                <option value="window">Window Table</option>
+                                <option value="booth">Booth Seating</option>
+                                <option value="bar">Bar Seating</option>
+                                <option value="patio">Patio (Weather Permitting)</option>
+                                <option value="quiet">Quiet Area</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block font-inter font-medium text-text-primary mb-2">Special Requests</label>
+                            <textarea class="input-field h-24 resize-none" placeholder="Please share any additional requests, accessibility needs, or special arrangements..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Confirmation & Policies -->
+                    <div class="space-y-6">
+                        <h3 class="font-playfair text-xl font-bold text-primary border-b border-secondary-200 pb-2">
+                            Confirmation & Policies
+                        </h3>
+                        
+                        <div class="bg-surface rounded-lg p-6 space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-secondary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-inter font-semibold text-primary mb-1">Reservation Policy</h4>
+                                    <p class="font-inter text-sm text-text-secondary">
+                                        Reservations are held for 15 minutes past the reserved time. For parties of 6 or more, a credit card is required to secure the reservation.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-secondary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-inter font-semibold text-primary mb-1">Cancellation Policy</h4>
+                                    <p class="font-inter text-sm text-text-secondary">
+                                        Standard reservations can be cancelled up to 2 hours before your reservation time. Special experiences require 24-hour notice.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <label class="flex items-start space-x-3">
+                                <input type="checkbox" class="mt-1 rounded border-secondary-300 text-primary focus:ring-primary" required />
+                                <span class="font-inter text-sm text-text-secondary">
+                                    I agree to the reservation and cancellation policies outlined above. *
+                                </span>
+                            </label>
+                            <label class="flex items-start space-x-3">
+                                <input type="checkbox" class="mt-1 rounded border-secondary-300 text-primary focus:ring-primary" />
+                                <span class="font-inter text-sm text-text-secondary">
+                                    I would like to receive updates about special events, seasonal menus, and exclusive offers.
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center pt-6">
+                        <button type="submit" class="btn-accent text-lg px-12 py-4 font-semibold">
+                            Confirm Reservation
+                        </button>
+                        <p class="font-inter text-sm text-text-secondary mt-4">
+                            You will receive a confirmation email within 5 minutes of booking
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Benefits -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-primary mb-4">Why Reserve with Us</h2>
+                <p class="font-inter text-lg text-text-secondary max-w-2xl mx-auto">
+                    Experience the difference of thoughtful hospitality from the moment you book.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-2">Real-Time Availability</h3>
+                    <p class="font-inter text-text-secondary">
+                        Our system shows live availability, ensuring your preferred time is truly available when you book.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-2">Instant Confirmation</h3>
+                    <p class="font-inter text-text-secondary">
+                        Receive immediate confirmation with all details, plus helpful reminders as your reservation approaches.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-2">Personalized Service</h3>
+                    <p class="font-inter text-text-secondary">
+                        We remember your preferences and special occasions, making every visit feel uniquely tailored to you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-12 bg-surface border-t border-secondary-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="font-playfair text-2xl font-bold text-primary mb-4">Need Assistance?</h3>
+            <p class="font-inter text-text-secondary mb-6">
+                Our reservation team is here to help with special requests, large parties, or any questions about your dining experience.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="tel:+1-555-CANVAS" class="flex items-center space-x-2 text-primary hover:text-primary-700 transition-quick font-inter font-semibold">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span>(555) CANVAS-1</span>
+                </a>
+                <span class="text-text-secondary hidden sm:block">•</span>
+                <a href="mailto:reservations@culinarycanvas.com" class="flex items-center space-x-2 text-primary hover:text-primary-700 transition-quick font-inter font-semibold">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span>reservations@culinarycanvas.com</span>
+                </a>
+            </div>
+            <p class="font-inter text-sm text-text-secondary mt-4">
+                Reservation team available daily 10:00 AM - 10:00 PM
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                            <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                        </svg>
+                        <span class="font-playfair text-xl font-bold text-accent">Culinary Canvas</span>
+                    </div>
+                    <p class="font-inter text-primary-100 mb-6 max-w-md">
+                        Where intention meets innovation in every dish. Experience culinary artistry that celebrates global inspiration rooted in local craftsmanship.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/culinarycanvas" class="text-primary-200 hover:text-accent transition-quick">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/culinarycanvas" class="text-primary-200 hover:text-accent transition-quick">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/culinarycanvas" class="text-primary-200 hover:text-accent transition-quick">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-playfair text-lg font-bold text-accent mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="interactive_menu_experience.html" class="font-inter text-primary-200 hover:text-accent transition-quick">Menu</a></li>
+                        <li><a href="reservation_experience.html" class="font-inter text-primary-200 hover:text-accent transition-quick">Reservations</a></li>
+                        <li><a href="private_events_experiences.html" class="font-inter text-primary-200 hover:text-accent transition-quick">Private Events</a></li>
+                        <li><a href="experience_gallery.html" class="font-inter text-primary-200 hover:text-accent transition-quick">Gallery</a></li>
+                        <li><a href="our_story_philosophy.html" class="font-inter text-primary-200 hover:text-accent transition-quick">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-playfair text-lg font-bold text-accent mb-4">Contact Info</h3>
+                    <div class="space-y-2 font-inter text-primary-200">
+                        <p>123 Culinary Street</p>
+                        <p>Downtown District</p>
+                        <p>New York, NY 10001</p>
+                        <p class="pt-2">
+                            <a href="tel:+1-555-CANVAS" class="hover:text-accent transition-quick">(555) CANVAS-1</a>
+                        </p>
+                        <p>
+                            <a href="mailto:hello@culinarycanvas.com" class="hover:text-accent transition-quick">hello@culinarycanvas.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-600 mt-8 pt-8 text-center">
+                <p class="font-inter text-primary-200">
+                    © 2025 Culinary Canvas. All Rights Reserved. | 
+                    <a href="javascript:void(0)" class="hover:text-accent transition-quick">Privacy Policy</a> | 
+                    <a href="javascript:void(0)" class="hover:text-accent transition-quick">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Reservation Button -->
+    <div class="fixed bottom-4 right-4 z-50 md:hidden">
+        <a href="contact_visit_information.html" class="btn-secondary shadow-warm-lg flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            <span>Call</span>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Experience selection function
+        function selectExperience(experienceType) {
+            // Update the experience dropdown in the quick booking widget
+            const experienceSelect = document.querySelector('select[class*="input-field"]');
+            if (experienceSelect) {
+                experienceSelect.value = experienceType;
+            }
+            
+            // Scroll to the detailed form
+            document.querySelector('.max-w-4xl').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Form validation and submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.classList.add('border-error');
+                } else {
+                    field.classList.remove('border-error');
+                }
+            });
+            
+            if (isValid) {
+                // Show success message (in a real app, this would submit to server)
+                alert('Thank you! Your reservation request has been submitted. You will receive a confirmation email within 5 minutes.');
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+
+        // Set minimum date to today
+        const dateInputs = document.querySelectorAll('input[type="date"]');
+        const today = new Date().toISOString().split('T')[0];
+        dateInputs.forEach(input => {
+            input.min = today;
+        });
+
+        // Auto-sync date and time between quick booking and detailed form
+        const quickDate = document.getElementById('reservation-date');
+        const detailedDate = document.querySelector('input[type="date"]');
+        
+        if (quickDate && detailedDate) {
+            quickDate.addEventListener('change', () => {
+                detailedDate.value = quickDate.value;
+            });
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

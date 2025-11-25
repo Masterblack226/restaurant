@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story & Philosophy - Culinary Canvas</title>
+    <meta name="description" content="Discover the passion, heritage, and culinary philosophy behind Culinary Canvas. Meet our team and learn about our commitment to local partnerships and sustainable practices." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Flocalrest3952back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-secondary-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                            <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                        </svg>
+                        <span class="font-playfair text-xl font-bold text-primary">Culinary Canvas</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="interactive_menu_experience.html" class="text-text-primary hover:text-primary transition-quick font-inter font-medium">Menu</a>
+                        <a href="reservation_experience.html" class="text-text-primary hover:text-primary transition-quick font-inter font-medium">Reservations</a>
+                        <a href="private_events_experiences.html" class="text-text-primary hover:text-primary transition-quick font-inter font-medium">Private Events</a>
+                        <a href="our_story_philosophy.html" class="text-primary font-inter font-semibold">Our Story</a>
+                        <a href="contact_visit_information.html" class="text-text-primary hover:text-primary transition-quick font-inter font-medium">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-primary hover:text-primary focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-secondary-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="interactive_menu_experience.html" class="block px-3 py-2 text-text-primary hover:text-primary transition-quick font-inter font-medium">Menu</a>
+                <a href="reservation_experience.html" class="block px-3 py-2 text-text-primary hover:text-primary transition-quick font-inter font-medium">Reservations</a>
+                <a href="private_events_experiences.html" class="block px-3 py-2 text-text-primary hover:text-primary transition-quick font-inter font-medium">Private Events</a>
+                <a href="our_story_philosophy.html" class="block px-3 py-2 text-primary font-inter font-semibold">Our Story</a>
+                <a href="contact_visit_information.html" class="block px-3 py-2 text-text-primary hover:text-primary transition-quick font-inter font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chef Marcus Rodriguez in kitchen" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+            <div class="absolute inset-0 bg-primary-900/50"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+                <h1 class="font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                    Our Story & Philosophy
+                </h1>
+                <p class="font-inter text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Discover the passion, heritage, and culinary philosophy that drives every dish we create and every moment we share with our community.
+                </p>
+                <div class="flex justify-center">
+                    <a href="#chef-vision" class="border-2 border-white text-white px-8 py-4 rounded-lg font-inter font-semibold transition-all duration-300 hover:bg-white hover:text-primary">
+                        Discover Our Journey
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Chef's Vision Section -->
+    <section id="chef-vision" class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-primary">
+                        Chef's Vision
+                    </h2>
+                    <p class="font-inter text-lg text-text-secondary leading-relaxed">
+                        My culinary journey began in my grandmother's kitchen in Barcelona, where I learned that food is more than sustenance—it's a language of love, memory, and connection. After training at Le Cordon Bleu and working in Michelin-starred kitchens across Europe, I discovered my true calling wasn't just in technique, but in creating moments that transform the everyday into the extraordinary.
+                    </p>
+                    <p class="font-inter text-text-secondary leading-relaxed">
+                        At Culinary Canvas, we believe that every meal should tell a story. Our philosophy of "elevated everyday moments" means taking familiar flavors and presenting them through the lens of global inspiration and local craftsmanship. We're not just serving food; we're creating experiences that linger in memory long after the last bite.
+                    </p>
+                    
+                    <div class="bg-surface p-6 rounded-xl">
+                        <p class="font-dancing text-2xl text-primary mb-2">"Cooking is not about convenience. It's about love, time, and the courage to be vulnerable through your craft."</p>
+                        <p class="font-inter text-sm text-text-secondary">- Chef Marcus Rodriguez</p>
+                    </div>
+
+                    <div class="flex items-center space-x-4 pt-4">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chef Marcus Rodriguez" class="w-16 h-16 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2'; this.onerror=null;" />
+                        <div>
+                            <p class="font-inter font-semibold text-primary">Chef Marcus Rodriguez</p>
+                            <p class="font-inter text-sm text-text-secondary">Executive Chef & Owner</p>
+                            <p class="font-inter text-sm text-text-secondary">Le Cordon Bleu Graduate • 15+ Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2" alt="Chef Marcus preparing signature dish" class="w-full h-96 object-cover rounded-2xl shadow-warm-lg" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2020/02/03/00/12/chef-4815617_1280.jpg'; this.onerror=null;" />
+                    <div class="absolute -bottom-6 -right-6 bg-accent text-primary p-6 rounded-xl shadow-warm">
+                        <p class="font-dancing text-2xl font-bold">2019</p>
+                        <p class="font-inter text-sm">Founded</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Timeline -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-primary mb-4">Our Journey</h2>
+                <p class="font-inter text-lg text-text-secondary">
+                    From vision to reality, discover the milestones that shaped Culinary Canvas.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-secondary-300"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- 2019 - Foundation -->
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="card">
+                                <h3 class="font-playfair text-xl font-bold text-primary mb-2">The Vision Takes Shape</h3>
+                                <p class="font-inter text-text-secondary mb-2">
+                                    After years of dreaming, Chef Marcus opens Culinary Canvas with a simple mission: create a space where global inspiration meets local craftsmanship.
+                                </p>
+                                <p class="font-inter text-sm text-accent font-semibold">March 2019</p>
+                            </div>
+                        </div>
+                        <div class="w-8 h-8 bg-primary rounded-full border-4 border-background flex items-center justify-center relative z-10">
+                            <div class="w-3 h-3 bg-accent rounded-full"></div>
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Restaurant opening day" class="w-full h-32 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&dpr=2'; this.onerror=null;" />
+                        </div>
+                    </div>
+
+                    <!-- 2020 - Recognition -->
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8">
+                            <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&dpr=2" alt="Award ceremony" class="w-full h-32 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/07/16/10/43/recipe-2508859_1280.jpg'; this.onerror=null;" />
+                        </div>
+                        <div class="w-8 h-8 bg-primary rounded-full border-4 border-background flex items-center justify-center relative z-10">
+                            <div class="w-3 h-3 bg-accent rounded-full"></div>
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <div class="card">
+                                <h3 class="font-playfair text-xl font-bold text-primary mb-2">First Recognition</h3>
+                                <p class="font-inter text-text-secondary mb-2">
+                                    Named "Best New Restaurant" by City Magazine and featured in Food & Wine's "Rising Stars" list, establishing our reputation for culinary excellence.
+                                </p>
+                                <p class="font-inter text-sm text-accent font-semibold">September 2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2021 - Community -->
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="card">
+                                <h3 class="font-playfair text-xl font-bold text-primary mb-2">Community Roots</h3>
+                                <p class="font-inter text-text-secondary mb-2">
+                                    Launch of our farm partnership program and monthly cooking classes, deepening our connection with local producers and food enthusiasts.
+                                </p>
+                                <p class="font-inter text-sm text-accent font-semibold">June 2021</p>
+                            </div>
+                        </div>
+                        <div class="w-8 h-8 bg-primary rounded-full border-4 border-background flex items-center justify-center relative z-10">
+                            <div class="w-3 h-3 bg-accent rounded-full"></div>
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Farm partnership" class="w-full h-32 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1300972/pexels-photo-1300972.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&dpr=2'; this.onerror=null;" />
+                        </div>
+                    </div>
+
+                    <!-- 2023 - Expansion -->
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8">
+                            <img src="https://images.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_1280.jpg" alt="Private dining room" class="w-full h-32 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        <div class="w-8 h-8 bg-primary rounded-full border-4 border-background flex items-center justify-center relative z-10">
+                            <div class="w-3 h-3 bg-accent rounded-full"></div>
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <div class="card">
+                                <h3 class="font-playfair text-xl font-bold text-primary mb-2">Growing Together</h3>
+                                <p class="font-inter text-text-secondary mb-2">
+                                    Opening of our private dining spaces and wine cellar, expanding our ability to host intimate celebrations and corporate events.
+                                </p>
+                                <p class="font-inter text-sm text-accent font-semibold">April 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2025 - Present -->
+                    <div class="flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="card">
+                                <h3 class="font-playfair text-xl font-bold text-primary mb-2">Today & Tomorrow</h3>
+                                <p class="font-inter text-text-secondary mb-2">
+                                    Continuing to evolve while staying true to our core values of exceptional hospitality, sustainable practices, and community connection.
+                                </p>
+                                <p class="font-inter text-sm text-accent font-semibold">Present Day</p>
+                            </div>
+                        </div>
+                        <div class="w-8 h-8 bg-accent rounded-full border-4 border-background flex items-center justify-center relative z-10">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                        </div>
+                        <div class="w-1/2 pl-8">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Current restaurant atmosphere" class="w-full h-32 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&dpr=2'; this.onerror=null;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Spotlights -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-primary mb-4">Meet Our Team</h2>
+                <p class="font-inter text-lg text-text-secondary">
+                    The passionate individuals who bring our culinary vision to life every day.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Executive Chef -->
+                <div class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chef Marcus Rodriguez" class="w-32 h-32 rounded-full object-cover mx-auto mb-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2'; this.onerror=null;" />
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-2">Marcus Rodriguez</h3>
+                    <p class="font-inter text-accent font-semibold mb-3">Executive Chef & Owner</p>
+                    <p class="font-inter text-text-secondary mb-4 leading-relaxed">
+                        Born in Barcelona, trained in Paris, and inspired by travels across five continents. Marcus brings 15+ years of Michelin-starred experience to create our signature "elevated everyday moments."
+                    </p>
+                    <div class="flex justify-center space-x-2 text-sm text-text-secondary">
+                        <span class="bg-surface px-3 py-1 rounded-full">Le Cordon Bleu</span>
+                        <span class="bg-surface px-3 py-1 rounded-full">15+ Years</span>
+                    </div>
+                </div>
+
+                <!-- Sommelier -->
+                <div class="card text-center">
+                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=2" alt="Isabella Chen - Head Sommelier" class="w-32 h-32 rounded-full object-cover mx-auto mb-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-2">Isabella Chen</h3>
+                    <p class="font-inter text-accent font-semibold mb-3">Head Sommelier</p>
+                    <p class="font-inter text-text-secondary mb-4 leading-relaxed">
+                        Master Sommelier with expertise in natural wines and perfect pairings. Isabella curates our wine program to complement each dish's unique flavor profile and seasonal ingredients.
+                    </p>
+                    <div class="flex justify-center space-x-2 text-sm text-text-secondary">
+                        <span class="bg-surface px-3 py-1 rounded-full">Master Sommelier</span>
+                        <span class="bg-surface px-3 py-1 rounded-full">Wine Expert</span>
+                    </div>
+                </div>
+
+                <!-- General Manager -->
+                <div class="card text-center">
+                    <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="David Thompson - General Manager" class="w-32 h-32 rounded-full object-cover mx-auto mb-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-2">David Thompson</h3>
+                    <p class="font-inter text-accent font-semibold mb-3">General Manager</p>
+                    <p class="font-inter text-text-secondary mb-4 leading-relaxed">
+                        Hospitality veteran with 12 years in fine dining. David ensures every guest feels welcomed and every detail is perfectly executed, from reservation to final farewell.
+                    </p>
+                    <div class="flex justify-center space-x-2 text-sm text-text-secondary">
+                        <span class="bg-surface px-3 py-1 rounded-full">Hospitality Expert</span>
+                        <span class="bg-surface px-3 py-1 rounded-full">12+ Years</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values & Sustainability -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-primary mb-4">Values & Sustainability</h2>
+                <p class="font-inter text-lg text-text-secondary max-w-2xl mx-auto">
+                    Our commitment extends beyond exceptional cuisine to environmental stewardship and community partnership.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Local Partnerships -->
+                <div class="card">
+                    <div class="w-12 h-12 bg-secondary text-white rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-3">Local Partnerships</h3>
+                    <p class="font-inter text-text-secondary mb-4">
+                        We source 85% of our ingredients from farms within 50 miles, supporting 12 local producers and reducing our carbon footprint while ensuring peak freshness.
+                    </p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>Miller's Organic Farm - Vegetables</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>Coastal Fishery Co-op - Seafood</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>Heritage Livestock Ranch - Meats</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Environmental Commitment -->
+                <div class="card">
+                    <div class="w-12 h-12 bg-secondary text-white rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-3">Environmental Care</h3>
+                    <p class="font-inter text-text-secondary mb-4">
+                        Zero-waste kitchen practices, composting program, and renewable energy usage. We've reduced our environmental impact by 60% since opening.
+                    </p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>95% Waste Diversion Rate</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>Solar-Powered Kitchen</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>Rooftop Herb Garden</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Impact -->
+                <div class="card">
+                    <div class="w-12 h-12 bg-secondary text-white rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold text-primary mb-3">Community Impact</h3>
+                    <p class="font-inter text-text-secondary mb-4">
+                        Monthly cooking classes, scholarship program for culinary students, and partnerships with local food banks to address food insecurity.
+                    </p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>500+ Students Taught</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>$50K in Scholarships</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>2,000 Meals Donated</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Roots, Global Inspiration -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-primary mb-4">Local Roots, Global Inspiration</h2>
+                <p class="font-inter text-lg text-text-secondary max-w-2xl mx-auto">
+                    Discover how our ingredients travel from local farms and global influences to create extraordinary dishes.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="font-playfair text-2xl font-bold text-primary">Our Ingredient Journey</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="font-inter text-sm font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-inter font-semibold text-primary mb-1">Local Sourcing</h4>
+                                <p class="font-inter text-text-secondary">Fresh ingredients sourced daily from our network of local farms and producers within 50 miles.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="font-inter text-sm font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-inter font-semibold text-primary mb-1">Global Techniques</h4>
+                                <p class="font-inter text-text-secondary">Traditional cooking methods from Mediterranean, Asian, and Latin American cuisines applied with modern precision.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="font-inter text-sm font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-inter font-semibold text-primary mb-1">Creative Fusion</h4>
+                                <p class="font-inter text-text-secondary">Innovative combinations that respect tradition while creating something entirely new and memorable.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="font-inter text-sm font-bold">4</span>
+                            </div>
+                            <div>
+                                <h4 class="font-inter font-semibold text-primary mb-1">Artful Presentation</h4>
+                                <p class="font-inter text-text-secondary">Each dish is plated as a work of art, engaging all senses for an unforgettable dining experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Farm to table ingredients" class="w-full h-96 object-cover rounded-2xl shadow-warm-lg" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1300972/pexels-photo-1300972.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=2'; this.onerror=null;" />
+                    
+                    <!-- Floating Elements -->
+                    <div class="absolute top-4 right-4 bg-accent text-primary px-4 py-2 rounded-lg font-inter font-semibold">
+                        Farm Fresh Daily
+                    </div>
+                    <div class="absolute bottom-4 left-4 bg-primary text-white px-4 py-2 rounded-lg font-inter font-semibold">
+                        Global Inspiration
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-primary mb-4">Awards & Recognition</h2>
+                <p class="font-inter text-lg text-text-secondary">
+                    Industry recognition that validates our commitment to culinary excellence.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-bold text-primary mb-2">Best New Restaurant</h3>
+                    <p class="font-inter text-sm text-text-secondary">City Magazine 2020</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-bold text-primary mb-2">Rising Stars</h3>
+                    <p class="font-inter text-sm text-text-secondary">Food & Wine 2020</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-bold text-primary mb-2">Sustainability Leader</h3>
+                    <p class="font-inter text-sm text-text-secondary">Green Restaurant Association 2022</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-lg font-bold text-primary mb-2">Community Champion</h3>
+                    <p class="font-inter text-sm text-text-secondary">Local Business Awards 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Call to Action -->
+<section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-playfair text-3xl sm:text-4xl font-bold mb-6 text-primary">Experience Our Story</h2>
+        <p class="font-inter text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+            Every dish tells our story of passion, craftsmanship, and community. Join us for an unforgettable culinary journey where intention meets innovation.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="reservation_experience.html" class="btn-accent text-lg px-8 py-4 w-full sm:w-auto text-center">
+                Reserve Your Table
+            </a>
+            <a href="interactive_menu_experience.html" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-inter font-semibold transition-all duration-300 hover:bg-primary hover:text-white w-full sm:w-auto text-center">
+                Explore Our Menu
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                            <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                        </svg>
+                        <span class="font-playfair text-xl font-bold text-accent">Culinary Canvas</span>
+                    </div>
+                    <p class="font-inter text-primary-100 mb-6 max-w-md">
+                        Where intention meets innovation in every dish. Experience culinary artistry that celebrates global inspiration rooted in local craftsmanship.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/culinarycanvas" class="text-primary-200 hover:text-accent transition-quick">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/culinarycanvas" class="text-primary-200 hover:text-accent transition-quick">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/culinarycanvas" class="text-primary-200 hover:text-accent transition-quick">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-playfair text-lg font-bold text-accent mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="interactive_menu_experience.html" class="font-inter text-primary-200 hover:text-accent transition-quick">Menu</a></li>
+                        <li><a href="reservation_experience.html" class="font-inter text-primary-200 hover:text-accent transition-quick">Reservations</a></li>
+                        <li><a href="private_events_experiences.html" class="font-inter text-primary-200 hover:text-accent transition-quick">Private Events</a></li>
+                        <li><a href="experience_gallery.html" class="font-inter text-primary-200 hover:text-accent transition-quick">Gallery</a></li>
+                        <li><a href="our_story_philosophy.html" class="font-inter text-primary-200 hover:text-accent transition-quick">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-playfair text-lg font-bold text-accent mb-4">Contact Info</h3>
+                    <div class="space-y-2 font-inter text-primary-200">
+                        <p>123 Culinary Street</p>
+                        <p>Downtown District</p>
+                        <p>New York, NY 10001</p>
+                        <p class="pt-2">
+                            <a href="tel:+1-555-CANVAS" class="hover:text-accent transition-quick">(555) CANVAS-1</a>
+                        </p>
+                        <p>
+                            <a href="mailto:hello@culinarycanvas.com" class="hover:text-accent transition-quick">hello@culinarycanvas.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-600 mt-8 pt-8 text-center">
+                <p class="font-inter text-primary-200">
+                    © 2025 Culinary Canvas. All Rights Reserved. | 
+                    <a href="javascript:void(0)" class="hover:text-accent transition-quick">Privacy Policy</a> | 
+                    <a href="javascript:void(0)" class="hover:text-accent transition-quick">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Reservation Button -->
+    <div class="fixed bottom-4 right-4 z-50 md:hidden">
+        <a href="reservation_experience.html" class="btn-accent shadow-warm-lg flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a1 1 0 011-1h6a1 1 0 011 1v4h3a1 1 0 011 1v9a1 1 0 01-1 1H5a1 1 0 01-1-1V8a1 1 0 011-1h3z"/>
+            </svg>
+            <span>Reserve</span>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Timeline animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe timeline items
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
